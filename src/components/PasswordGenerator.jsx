@@ -173,7 +173,7 @@ function PasswordGenerator({ showToast }) {
       {/* ---- Generated Password Display ---- */}
       <div className="password-display-wrapper">
         <div className="password-display" aria-label="Generated password">
-          {password || <span className="placeholder-text">Your password appears here…</span>}
+          {password || <span className="placeholder-text">Your password shows up here ✿</span>}
         </div>
 
         {/* Strength badge — only shown when a password exists */}
