@@ -12,12 +12,13 @@
 //   onGenerate    — function to trigger password generation
 // ============================================================
 
-// Labels shown next to each checkbox toggle — dumpling themed!
+// Labels shown next to each checkbox toggle.
+// These describe which character groups are enabled for password generation.
 const OPTION_LABELS = {
-  uppercase: "A–Z  (Thick Skin)",
-  lowercase: "a–z  (Soft Dough)",
-  numbers:   "0–9  (Sesame Seeds)",
-  symbols:   "!@#  (Spicy Sauce)",
+  uppercase: "A–Z (Uppercase)",
+  lowercase: "a–z (Lowercase)",
+  numbers:   "0–9 (Digits)",
+  symbols:   "!@# (Symbols)",
 };
 
 function PasswordOptions({ length, setLength, options, toggleOption, onGenerate }) {
@@ -25,7 +26,7 @@ function PasswordOptions({ length, setLength, options, toggleOption, onGenerate 
     <div className="options-panel">
 
       {/* ---- Section title ---- */}
-      <h2 className="section-title">Choose Your Fillings</h2>
+      <h2 className="section-title">Choose Character Sets</h2>
 
       {/* ---- Length Slider ---- */}
       <div className="length-control">
@@ -69,7 +70,7 @@ function PasswordOptions({ length, setLength, options, toggleOption, onGenerate 
       {/* ---- Generate Button ---- */}
       {/* onClick fires the main generation function from parent */}
       <button className="btn btn-primary" onClick={onGenerate}> {/* onClick event */}
-        🥟 Steam a Password
+        Generate Password
       </button>
 
     </div>

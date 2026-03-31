@@ -84,7 +84,7 @@ function PasswordGenerator({ showToast }) {
     // Validation: make sure at least one character type is selected
     const activeTypes = Object.keys(options).filter((key) => options[key]);
     if (activeTypes.length === 0) {
-      showToast("Pick at least one filling! 🥟");
+      showToast("Select at least one character set!");
       return;
     }
 
@@ -110,7 +110,7 @@ function PasswordGenerator({ showToast }) {
   const copyToClipboard = () => {
     if (!password) return;
     navigator.clipboard.writeText(password);
-    showToast("Copied to clipboard! 📋");
+    showToast("Copied to clipboard.");
   };
 
   // ----------------------------------------------------------
@@ -124,7 +124,7 @@ function PasswordGenerator({ showToast }) {
       return;
     }
     setHistory([password, ...history]); // newest first
-    showToast("Password saved! 🥟");
+    showToast("Password saved.");
   };
 
   // ----------------------------------------------------------
@@ -161,7 +161,7 @@ function PasswordGenerator({ showToast }) {
     if (pwd.length < 8 || activeCount === 1) return "Weak";
     if (pwd.length < 12 || activeCount === 2) return "Fair";
     if (pwd.length < 16 || activeCount === 3) return "Strong";
-    return "Crispy 🥟"; // maximum strength!
+    return "Crispy"; // maximum strength!
   };
 
   // ----------------------------------------------------------
@@ -212,7 +212,7 @@ function PasswordGenerator({ showToast }) {
         onClear={clearHistory}
         onCopy={(pwd) => {
           navigator.clipboard.writeText(pwd);
-          showToast("Copied! 📋");
+          showToast("Copied to clipboard.");
         }}
       />
 

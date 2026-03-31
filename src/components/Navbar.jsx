@@ -1,19 +1,19 @@
  
 // ============================================================
 // components/Navbar.jsx
-// A simple top navigation bar with the app name and a dumpling
-// emoji logo. Purely presentational — no props needed.
+// A simple top navigation bar with the app name and a cipher glyph logo.
+// Purely presentational — no props needed.
 // ============================================================
 
 function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-brand">
-        <span className="navbar-logo">🥟</span>
-        <span className="navbar-title">DumpKey</span>
+        <span className="navbar-logo">⌁</span>
+        <span className="navbar-title">CipherForge</span>
       </div>
       <div className="navbar-tagline">
-        Freshly Steamed Passwords
+        Configurable password generation
       </div>
     </nav>
   );

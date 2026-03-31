@@ -25,10 +25,10 @@ function App() {
 
   return (
     <div className="app-wrapper">
-      {/* Decorative background dumplings (purely visual) */}
-      <div className="bg-dumplings" aria-hidden="true">
-        <span>🥟</span><span>🥟</span><span>🥟</span>
-        <span>🥟</span><span>🥟</span><span>🥟</span>
+      {/* Decorative background glyphs (purely visual) */}
+      <div className="bg-glyphs" aria-hidden="true">
+        <span>⟡</span><span>⌬</span><span>⧉</span>
+        <span>⟠</span><span>⧫</span><span>⌁</span>
       </div>
 
       {/* Navbar component at the top */}
@@ -36,8 +36,8 @@ function App() {
 
       {/* Main content area */}
       <main className="main-content">
-        {/* PasswordGenerator is our main container component */}
-        {/* We pass showToast down as a prop so it can notify the user */}
+        {/* PasswordGenerator contains the main UI: length slider, character-set toggles, strength badge, and history */}
+        {/* We pass showToast down so copy/save actions can provide quick feedback */}
         <PasswordGenerator showToast={showToast} />
       </main>
 

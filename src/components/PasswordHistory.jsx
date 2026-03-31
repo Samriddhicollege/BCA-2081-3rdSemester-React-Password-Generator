@@ -18,7 +18,7 @@ function PasswordHistory({ history, onDelete, onClear, onCopy }) {
 
       {/* ---- Header row with title and clear button ---- */}
       <div className="history-header">
-        <h2 className="section-title">Steamed Batch</h2>
+        <h2 className="section-title">Saved Passwords</h2>
         {/* Conditional rendering: only show Clear All if history has items */}
         {history.length > 0 && (
           <button className="btn btn-danger-ghost" onClick={onClear}>
@@ -29,7 +29,7 @@ function PasswordHistory({ history, onDelete, onClear, onCopy }) {
 
       {/* ---- Empty state message (conditional rendering) ---- */}
       {history.length === 0 ? (
-        <p className="empty-state">No saved passwords yet. Steam some! 🥟</p>
+        <p className="empty-state">No saved passwords yet. Generate one above.</p>
       ) : (
         // ---- List rendering with .map() and unique keys ----
         <ul className="history-list">
@@ -44,7 +44,7 @@ function PasswordHistory({ history, onDelete, onClear, onCopy }) {
                   onClick={() => onCopy(pwd)} // onClick event
                   title="Copy"
                 >
-                  📋
+                  ⧉
                 </button>
                 {/* onClick deletes this specific password by index */}
                 <button
@@ -52,7 +52,7 @@ function PasswordHistory({ history, onDelete, onClear, onCopy }) {
                   onClick={() => onDelete(index)} // onClick event
                   title="Delete"
                 >
-                  ✕
+                  ×
                 </button>
               </div>
             </li>
