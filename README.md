@@ -18,7 +18,7 @@ A lightweight, modern password generator built with React and Vite. Generate str
 
 * **Instructor Name:** Mr. Dipak Shrestha
 * **Course Title:** React Development / Full Stack Development
-* **College Name:** XYZ International College
+* **College Name:** Samriddhi College
 
 ---
 
@@ -126,30 +126,13 @@ go run main.go
 
 ---
 
-## Project Structure
-
-```
-/project-root
-│── frontend/
-│   ├── src/
-│   ├── components/
-│   ├── pages/
-│
-│── backend/
-│   ├── controllers/
-│   ├── models/
-│   ├── routes/
-│
-│── database/
-│── README.md
-```
 
 ---
 
 ## GitHub & Live Demo
 
-* **GitHub Repository:** https://github.com/johndoe/rms-project
-* **Live URL (if deployed):** https://rms-demo.netlify.app
+* **GitHub Repository:** https://github.com/Samriddhicollege/BCA-2081-3rdSemester-React-Password-Generator.git
+* **Live URL (if deployed):** https://password-generator-gmwq.vercel.app
 
 ---
 
